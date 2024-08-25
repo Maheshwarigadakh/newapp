@@ -17,7 +17,14 @@ function home() {
         }}>
           Show Toast
         </button>
-
+        
+        <button type="button" className="btn" onClick={()=>{
+          toast.dismiss()
+          toast.success("Loading Completed")
+        }}>
+          Finish 
+        </button>
+        
         <Foot/>
       <Toaster/>
     </div>
