@@ -3,15 +3,18 @@ import "./home.css"
 import Navbar from "./../../component/navbar/navbar"
 import Foot from "../../component/foot/footer"
 import HomeImg from "./House searching-bro.png"
-
+import toast, { Toaster } from "react-hot-toast"
 
 function home() {
   return (
     <div>
         <Navbar/>
-        <h1 className="page-title">home</h1>
+        <h1 className="page-title">Home</h1>
         <img src={HomeImg} className="header-img"/>
+
+        
         <Foot/>
+      <Toaster/>
     </div>
   )
 }
