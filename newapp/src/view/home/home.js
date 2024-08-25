@@ -12,7 +12,12 @@ function home() {
         <h1 className="page-title">Home</h1>
         <img src={HomeImg} className="header-img"/>
 
-        
+        <button type="button" className="btn" onClick={()=>{
+          toast.success("Hello From Mahi")
+        }}>
+          Show Toast
+        </button>
+
         <Foot/>
       <Toaster/>
     </div>
