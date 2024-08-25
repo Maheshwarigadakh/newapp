@@ -24,7 +24,12 @@ function home() {
         }}>
           Finish 
         </button>
-        
+        <button type="button" className="btn" onClick={()=>{
+          toast.dismiss()
+          toast.error("Fail to Load")
+        }}>
+          Fail 
+        </button>
         <Foot/>
       <Toaster/>
     </div>
